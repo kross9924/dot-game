@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+:root{
+    --color-1: #025159;
+    --color-2: #03A696;
+    --color-3: #F28705;
+    --color-4: #F25D27;
+    --color-5: rgb(242, 5, 5);
+
+}
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-size:10px;
+    font-family: 'Pacifico', cursive;
+    color:white;
+}
+
+
+html{
+    width:100%;
+    height:100%;
+}
+
+
+
+body{
+    height:100%;
+    background-image : linear-gradient(to bottom,var(--color-4),var(--color-3));
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+
+canvas{
+    background-image : linear-gradient(to bottom right,var(--color-1),var(--color-2));
+    box-shadow: 0 2rem 6rem rgba(0,0,0,0.4);
+    display:block;
+    margin:3rem auto;
+    border-radius: 1rem;
+}
+
+.nav{
+    height:5rem;
+    width:100%;
+    background:var(--color-2);
+}
+
+.nav ul{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:8px;
+    list-style: none;
+}
+
+.nav ul li button {
+    background:none;
+    border: none;
+    font-size:2rem;
+}
+
+.nav ul li button:hover{
+    transform:scale(1.1);
+}
+
+.nav ul li button:focus{
+    outline:0;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+    margin-bottom:0;
+}
+
+.container h1{
+    font-size:5rem;
+}
+
+.container .player-container{
+    margin-top:2rem;
+    margin-bottom:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.container .player-container .player1 h3 ,.score,.player2 h3,.score{
+    font-size:3rem;
+}
+
+.player1 , .player2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.fa-cog{
+    font-size:2rem;
+}
+
+.popup-container{
+    background-color:rgba(0,0,0,0.7);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    /* display:flex; */
+    display:none;
+    align-items: center;
+    justify-content:center;
+ }
+
+ .popup{
+    /* background:#2980b9; */
+    border-radius:5px;
+    /* box-shadow:0 15px 10px 3px rgba(0,0,0,0.1); */
+    padding:20px;
+    text-align:center;
+}
+
+.popup h2{
+    font-size:2rem;
+}
+
+.popup button{
+    cursor:pointer;
+    font-size:2rem;
+    background:none;
+    border:none;
+}
+.popup button:focus{
+    outline:none;
+}
+
+.popup button:hover{
+    transform:scale(1.1);
+}
+
+.popup-setting{
+    background-color:rgba(0,0,0,0.7);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    /* display:flex; */
+    display:none;
+    align-items: center;
+    justify-content:center;
+}
+
+.popup-setting .container{
+ 
+    border-radius:5px;
+    /* box-shadow:0 15px 10px 3px rgba(0,0,0,0.2); */
+    padding:20px;
+    width:50%;
+    text-align:center;
+    position: relative;
+}
+
+.popup-setting .container .form{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.popup-setting .container .form .form-control{
+    margin:1rem;
+}
+
+.popup-setting .container h2{
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+.popup-setting .container input{
+    color:black;
+    font-size:2rem;
+    width:100%;
+}
+.popup-setting .container label{
+    font-size:2rem;
+}
+
+.popup-setting .container select{
+    font-size:2rem;
+    width:100%;
+    color:black;
+}
+
+.popup-setting .container .fs{
+    align-self: center;
+    
+}
+
+.popup-setting .container select option{
+    font-size:2rem;
+    color:black;
+}
+
+
+
+.popup-setting .container .form button{
+    cursor: pointer;
+    font-size:3rem;
+    color:white;
+    align-self: center;
+    width:50%;
+    background:none;
+    border:none;
+}
+
+.form button:hover{
+    transform:scale(1.1);
+}
+
+.popup-setting .container .cancel{
+    background:none;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: translate(-1.5rem,1rem);
+    border:none;
+}
+
+.cancel i:hover{
+    transform:scale(1.1);
+}
+.cancel:focus{
+    outline:0;
+}
+
+.fa-times{
+    font-size:3rem;
+}
+
+#final-message{
+    font-size:3rem;
+    color:white;
+}
